@@ -1,17 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import Bright from "../advanced/dailyDev/image/bright.JPG";
-import Taheebat from "../advanced/dailyDev/image/taheebat.JPG";
-import Ibunkun from "../advanced/dailyDev/image/ib.JPG";
-import Sam from "../advanced/dailyDev/image/sam.JPG";
-import Vero from "../advanced/dailyDev/image/vero.JPG";
-
 const Gallery = () => {
-  const [data, setData] = useState([
-   
-    
-  ]);
+  const [data, setData] = useState([ ]);
 
   const fetchData = async () => {
     const response = await fetch("data.json");
